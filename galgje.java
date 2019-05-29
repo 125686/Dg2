@@ -37,3 +37,6 @@ public static void main(String[] args) {
 		sc.close();
 		// close scanner einde van het programma
 	}
+	public static void galg(char raad){
+
+	}
