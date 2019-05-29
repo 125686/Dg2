@@ -16,7 +16,6 @@ public class galgje {
 	// zodra een letter goed word geraden word * vervangen door een het juiste
 	// letter.
 	// de "*" lengte is gelijk aan de lengte van het woord
-
 	private static int count = 0;
 	// counter staat op 0
 
@@ -50,20 +49,20 @@ public static void main(String[] args) {
             } else {
                 nieuwester += "*";
             }
+        if (ster.equals(nieuwester)) {
+            count++;
+            //als de input niet klopt blijft de ster en de nieuwester gelijk.
+            galgteken();
+        } else {
+            ster = nieuwester;
+            // als de input wel klopt  en ze zijn hetzelfde veranderd de ster naar de nieuwestesterr
+        }
+        if (ster.equals(woord)) {
+            System.out.println("Correct! het woord is geraden ! The woord was " + woord);
+            //als ster gelijk is aan het woord
+        }
     }
-    if(ster.equals(nieuwester)){
-    count++;
-    //als de input niet klopt blijft de ster en de nieuwester gelijk.
-    galgteken();
-    }else{
-    ster = nieuwester;
-    // als de input wel klopt  en ze zijn hetzelfde veranderd de ster naar de nieuwestesterr
-    }
-    if(ster.equals(woord)){
-    System.out.println("Correct! het woord is geraden ! The woord was " + woord);
-    //als ster gelijk is aan het woord
-    }
- public static void galgteken() {
+ public static void galgteken(){
         if (count == 1) {
             System.out.println("Fout, probeer opnieuw");
             System.out.println("4 beurten over");
