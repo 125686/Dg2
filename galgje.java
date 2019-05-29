@@ -37,6 +37,17 @@ public static void main(String[] args) {
 		sc.close();
 		// close scanner einde van het programma
 	}
-	public static void galg(char raad){
-
-	}
+	public static void galg(char raad) {
+        //raad in de vorige methode word mee gegeven aan deze methode.
+        String nieuwester = "";
+        for (int i = 0; i < woord.length(); i++)
+            //loopt de code door de lengte van het random gekozen woord in de array "woorden"
+            if (woord.charAt(i) == raad) {
+                // kijkt naar positie waar de letter op staat en of die gelijk is aan het letter van raad.
+            } else if (ster.charAt(i) != '*') {
+                nieuwester += woord.charAt(i);
+                // de nieuwester = "" + woord.char(i);
+            } else {
+                nieuwester += "*"
+            }
+    }
