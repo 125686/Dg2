@@ -1,7 +1,7 @@
 import java.util.Scanner;
 // importeren van de scanner
 
-public class Galgje {
+public class galgje {
 
 	private static String[] woorden = { "dehydreren", "banana", "computer", "exogeen", "arbitraal", "excitatie",
 			"liquide", "weivlies", "prairie", "necrose", "clipper", "convex", "plebejer", "mecenaat", "cacao",
@@ -48,7 +48,7 @@ public static void main(String[] args) {
                 nieuwester += woord.charAt(i);
                 // de nieuwester = "" + woord.char(i);
             } else {
-                nieuwester += "*"
+                nieuwester += "*";
             }
     }
     if(ster.equals(nieuwester)){
@@ -63,3 +63,69 @@ public static void main(String[] args) {
     System.out.println("Correct! het woord is geraden ! The woord was " + woord);
     //als ster gelijk is aan het woord
     }
+ public static void galgteken() {
+        if (count == 1) {
+            System.out.println("Fout, probeer opnieuw");
+            System.out.println("4 beurten over");
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println("___|___");
+            System.out.println();
+        }
+        if (count == 2) {
+            System.out.println("Fout, probeer opnieuw");
+            System.out.println("3 beurten over");
+            System.out.println("   |");
+            System.out.println("   |");
+            System.out.println("   |");
+            System.out.println("   |");
+            System.out.println("   |");
+            System.out.println("   |");
+            System.out.println("   |");
+            System.out.println("___|___");
+        }
+        if (count == 3) {
+            System.out.println("Fout, probeer opnieuw");
+            System.out.println("2 beurten over");
+            System.out.println("   ____________");
+            System.out.println("   |");
+            System.out.println("   |");
+            System.out.println("   |");
+            System.out.println("   |");
+            System.out.println("   |");
+            System.out.println("   |");
+            System.out.println("   | ");
+            System.out.println("___|___");
+        }
+        if (count == 4) {
+            System.out.println("Fout, probeer opnieuw");
+            System.out.println("1 beurt over");
+            System.out.println("   ____________");
+            System.out.println("   |          _|_");
+            System.out.println("   |         /   \\");
+            System.out.println("   |        |     |");
+            System.out.println("   |         \\_ _/");
+            System.out.println("   |");
+            System.out.println("   |");
+            System.out.println("   |");
+            System.out.println("___|___");
+        }
+
+        if (count == 5) {
+            System.out.println("GAME OVER!");
+            System.out.println("0 beurten over");
+            System.out.println("   ____________");
+            System.out.println("   |          _|_");
+            System.out.println("   |         /   \\");
+            System.out.println("   |        |     |");
+            System.out.println("   |         \\_ _/");
+            System.out.println("   |          _|_");
+            System.out.println("   |         / | \\");
+            System.out.println("   |          / \\ ");
+            System.out.println("___|___      /   \\");
+            System.out.println("GAME OVER! The word was " + woord);
+        }
+    }
+}
