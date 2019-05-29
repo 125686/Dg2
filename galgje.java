@@ -51,3 +51,15 @@ public static void main(String[] args) {
                 nieuwester += "*"
             }
     }
+    if(ster.equals(nieuwester)){
+    count++;
+    //als de input niet klopt blijft de ster en de nieuwester gelijk.
+    galgteken();
+    }else{
+    ster = nieuwester;
+    // als de input wel klopt  en ze zijn hetzelfde veranderd de ster naar de nieuwestesterr
+    }
+    if(ster.equals(woord)){
+    System.out.println("Correct! het woord is geraden ! The woord was " + woord);
+    //als ster gelijk is aan het woord
+    }
