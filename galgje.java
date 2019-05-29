@@ -16,6 +16,6 @@ private static String woord = woorden[(int) (Math.random() * woorden.length)];
 private static String ster = new String(new char[woord.length()]).replace("\0", "*");
 // zodra een letter goed word geraden word * vervangen door een het juiste
 // letter.
-// de "*" lengte is gelijk aan de lengte van het woord.
+// de "*" lengte is gelijk aan de lengte van het woord
 private static int count = 0;
 // counter staat op 0
